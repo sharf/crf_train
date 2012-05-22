@@ -1,0 +1,8 @@
+
+Compile: Run make. You need to have $FASTLIBPATH set to the location where fastlib is installed and $MLPACK set to the location of your mlpack installation. You need to have OPT++ installed. If it is in a non-standard location, you will need to add an appropriate -L option in the Makefile
+
+To run the training code: ./crf --training_file=<name of training file> --parameter_file=<name of file to store the model in>. There is a sample training file provided in the current directory called train200.txt, train300.txt.
+
+Example:
+./crf --training_file=train200.txt --parameter_file=lambda200.txt
+
